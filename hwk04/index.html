@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+
+</head>
+
+<body>
+
+
+<audio id="track">
+  <source src="./graphics/Ghibli-Jazz-Piano.mp3" type="audio/mpeg" />
+</audio>
+
+<audio id="track">
+  <source src="./graphics/Ghibli-Jazz-Piano.mp3" type="audio/mpeg" />
+</audio>
+
+
+
+
+  
+<div class="imageGrid">
+
+
+
+
+  <img class="desktop" src="./graphics/desktop1.svg" width="1280" height="1024" />
+
+
+  <div id="player-container">
+    <div id="play-pause" class="play"></div>
+  </div>
+
+
+
+
+
+<script>
+
+
+var track = document.getElementById('track');
+
+  var controlBtn = document.getElementById('play-pause');
+  
+  function playPause() {
+      if (track.paused) {
+          track.play();
+          //controlBtn.textContent = "Pause";
+          controlBtn.className = "pause";
+      } else { 
+          track.pause();
+           //controlBtn.textContent = "Play";
+          controlBtn.className = "play";
+      }
+  }
+  
+  controlBtn.addEventListener("click", playPause);
+  track.addEventListener("ended", function() {
+    controlBtn.className = "play";
+  });
+
+  
+
+
+  //mobile
+
+
+
+
+
+  </script>
+
+</body>    
+
+</html>
