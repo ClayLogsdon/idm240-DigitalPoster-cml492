@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+img {
+  margin: 1rem;
+}
+
+
+@keyframes stretchInFromLeft {
+0% {
+  width: 100%;
+}
+100% {
+  width: 0;
+}
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 135px;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.overlay {
+  animation: 7s ease-out 0s 1 stretchInFromLeft;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  background: #fff;
+  width: 0;
+  height: 100%;
+}
+
+.ghibli-vid {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.desktop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player-container #play-pause {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  cursor: pointer;
+  text-indent: -999999px;
+  height: 50px;
+  width: 100px;
+  z-index: 30;
+  background-image: url(./graphics/play-btn.svg);
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: 60px;
+
+}
+
+.play {
+  background-image: url(./graphics/play-btn.svg);
+  z-index: 30;
+}
+
+.pause {
+  background-image: url(./graphics/pause-btn.svg) !important;
+  z-index: 30;
+}
+
+
+@media only screen and (min-width: 200px) {
+   
+  .desktop {
+    width: 90%;
+  }
+
+
+  #player-container #play-pause {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -65px;
+    cursor: pointer;
+    text-indent: -999999px;
+    height: 50px;
+    width: 100px;
+    z-index: 30;
+    background-image: url(./graphics/play-btn.svg);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: 20px;
+  
+  }
+  
+
+@media only screen and (min-width: 320px) {
+   
+    .desktop {
+      width: 80%;
+    }
+
+    #player-container #play-pause {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -107px;
+      cursor: pointer;
+      text-indent: -999999px;
+      height: 50px;
+      width: 100px;
+      z-index: 30;
+      background-image: url(./graphics/play-btn.svg);
+      background-repeat: no-repeat !important;
+      background-position: center;
+      background-size: 40px;
+    
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+   
+  .desktop {
+    width: 60%;
+  }
+
+  #player-container #play-pause {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -92px;
+    cursor: pointer;
+    text-indent: -999999px;
+    height: 50px;
+    width: 100px;
+    z-index: 30;
+    background-image: url(./graphics/play-btn.svg);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: 35px;
+  
+  }
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+   
+  .desktop {
+    width: 1280px;
+  }
+
+  #player-container #play-pause {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    cursor: pointer;
+    text-indent: -999999px;
+    height: 50px;
+    width: 100px;
+    z-index: 30;
+    background-image: url(./graphics/play-btn.svg);
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: 60px;
+  
+  }
+
+}
+
+  

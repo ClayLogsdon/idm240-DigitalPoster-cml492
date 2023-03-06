@@ -14,26 +14,18 @@
 </head>
 
 <body>
+    <style>
+        body {
+            background-color: #000;
+        }
+    </style>
 
+
+<img class="desktop" src="./graphics/desktop1.svg"/>
 
 <audio id="track">
-  <source src="./graphics/Ghibli-Jazz-Piano.mp3" type="audio/mpeg" />
-</audio>
-
-<audio id="track">
-  <source src="./graphics/Ghibli-Jazz-Piano.mp3" type="audio/mpeg" />
-</audio>
-
-
-
-
-  
-<div class="imageGrid">
-
-
-
-
-  <img class="desktop" src="./graphics/desktop1.svg" width="1280" height="1024" />
+    <source src="./graphics/Ghibli-Jazz-Piano.mp3" type="audio/mpeg" />
+  </audio>
 
 
   <div id="player-container">
@@ -42,43 +34,36 @@
 
 
 
+  <script>
 
 
-<script>
-
-
-var track = document.getElementById('track');
-
-  var controlBtn = document.getElementById('play-pause');
-  
-  function playPause() {
-      if (track.paused) {
-          track.play();
-          //controlBtn.textContent = "Pause";
-          controlBtn.className = "pause";
-      } else { 
-          track.pause();
-           //controlBtn.textContent = "Play";
-          controlBtn.className = "play";
+    var track = document.getElementById('track');
+    
+      var controlBtn = document.getElementById('play-pause');
+      
+      function playPause() {
+          if (track.paused) {
+              track.play();
+              //controlBtn.textContent = "Pause";
+              controlBtn.className = "pause";
+          } else { 
+              track.pause();
+               //controlBtn.textContent = "Play";
+              controlBtn.className = "play";
+          }
       }
-  }
-  
-  controlBtn.addEventListener("click", playPause);
-  track.addEventListener("ended", function() {
-    controlBtn.className = "play";
-  });
-
-  
-
-
-  //mobile
+      
+      controlBtn.addEventListener("click", playPause);
+      track.addEventListener("ended", function() {
+        controlBtn.className = "play";
+      });
+    
+    
+    
+      </script>
 
 
+</body>
 
-
-
-  </script>
-
-</body>    
 
 </html>
